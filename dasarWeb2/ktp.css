@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.ktp-landscape {
+    width: 750px;
+    margin: 50px auto;
+    background-color: rgb(131, 208, 234);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.ktp-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 3px;
+}
+
+.ktp-nik {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    line-height: 5px;
+}
+
+.ktp-header h2 {
+    margin-top: 0;
+}
+
+.ktp-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ktp-detail {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 6px;
+}
+
+.label {
+    display: inline-block;
+    width: 200px;
+}
+
+.label2 {
+    margin-left: 40px;
+}
+
+.label3 {
+    margin-left: 70px;
+}
+
+.label4 {
+    margin-left: 115px;
+}
+
+.label5 {
+    margin-left: 101px;
+}
+
+.label6 {
+    margin-left: 85px;
+}
+
+.label7 {
+    margin-right: 135px;
+}
+
+.ktp-photo img {
+    width: 150px;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ktp-photo {
+    text-align: center;
+    font-weight: bold;
+    line-height: 3px;
+}
+
+.ktp-photo img.ttd {
+    width: 50px;
+    height: auto;
+}
