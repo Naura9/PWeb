@@ -10,5 +10,10 @@ $hasilBagi = $a / $b;
 $sisaBagi = $a % $b;
 $pangkat = $a ** $b;
 
-echo 
+echo "Hasil Penjumlahan: " . $hasilTambah . "<br>";
+echo "Hasil Pengurangan: " . $hasilKurang . "<br>";
+echo "Hasil Perkalian: " . $hasilKali . "<br>";
+echo "Hasil Pangkat: " . $pangkat . "<br>";
+echo "Hasil Pembagian: " . $hasilBagi . "<br>";
+echo "Sisa Pembagian: " . $sisaBagi . "<br>";
 ?>
