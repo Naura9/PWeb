@@ -1,0 +1,21 @@
+<!--Praktikum Bagian 6 - Effect Slide-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styleSlide.css"/>
+        <script src="jquery-3.7.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    // Elemen id "flip" diklik, melakukan efek slideDown() pada elemen dengan id "kotak2"
+                    $("#kotak2").slideDown("slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="flip">Klik untuk Efek Slide</div>
+        <!-- Elemen yg memiliki style="display: none;" untuk menymbunyikan elemen secara default -->
+        <div id="kotak2" style="display: none;">Selamat Pagi</div>
+    </body>
+</html>

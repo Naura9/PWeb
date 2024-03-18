@@ -1,0 +1,37 @@
+<!--Praktikum Bagian 3 - Mencoba mengunakan selector -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.7.1.js"></script>
+        <script>
+            $(document).ready(function() {
+                //Ketika diklik, elemen yang dipilih akan disembunyikan
+                $("button").click(function() {
+                    // Menyembunyikan semua elemen h2
+                    $("h2").hide();
+                    // Menyembunyikan semua elemen dengan kelas subjudul
+                    $(".subjudul").hide();
+                    // Menyembunyikan elemen dengan id paragraf
+                    $("#paragraf").hide();
+                    // Menyembunyikan elemen dengan id paragraf dan kelas dua
+                    $("#paragraf.dua").hide();
+                    // Menyembunyikan elemen <p> dengan kelas paragraf di dalam elemen <div>
+                    $("div p.paragraf").hide();
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <h2> Ini adalah Judul Bab</h2>
+        <h3 class="subjudul"> Ini adalah Sub Judul Bab</h3>
+        <p id="paragraf"> Ini adalah paragraf pertama </p>
+        <p id="paragraf" class="dua"> Ini adalah paragraf kedua </p>
+        <div>
+            <p class="paragraf">
+                Ini adalah paragraf ketiga
+            </p>
+        </div>
+        <p> Ini paragraf yang akan tetap ditampilkan</p>
+        <button> Klik Saya! </button>
+        </body>
+</html>
