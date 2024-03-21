@@ -1,0 +1,39 @@
+<!--Praktikum Bagian 8 - JQuery DOM Manipulation-->
+<!--Method untuk memanipulasi DOM (Document Object Model)
+    yaitu text(), html(), dan val()-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Ketika dokumen dimuat, menjalankan fungsi-fungsi
+            // Tombol dengan id "btn1" di klik, teks dari elemen dengan id "test1" menggunakan fungsi text()
+            $("#btn1").click(function(){ 
+                alert($("#test1").text()); 
+            });
+            // Tombol dengan id "btn2" diklik, HTML dari elemen dengan id "test2" menggunakan fungsi html()
+            $("#btn2").click(function(){ 
+                alert($("#test2").html());
+            });
+            // Tombol dengan id "btn3" diklik, nilai dari elemen input dengan id "test3" menggunakan fungsi val()
+            $("#btn3").click(function(){ 
+                alert($("#test3").val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="test1">This is the first paragraph.</p> 
+    <p id="test2">This is <b> another </b> paragraph.</p>
+
+    <p>Your Name: <input type="text" id="test3"></p>
+    
+    <button id="btn1">Get Text</button>
+    <button id="btn2">Get HTML</button>
+    <button id="btn3">Get Value</button>
+</body>
+</html>
+
+

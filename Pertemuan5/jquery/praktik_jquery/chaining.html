@@ -1,0 +1,34 @@
+<!--Praktikum Bagian 7 - Animasi-->
+<!--Chaining untuk memberikan beberapa method animasi ke dalam
+    satu elemen menggunakan satu statement-->
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" type="text/css" href="styleAnimate.css"/>
+            <script src="jquery-3.7.1.js"></script>
+            <script>
+            $(document).ready(function(){
+                $("button").click(function() {
+                    // Ketika tombol diklik, melakukan chaining pada elemen dengan kelas box
+                    $(".box")
+                    // Animasi pertama, lebar menjadi 300px
+                    .animate({width: "300px"})
+                    // Animasi kedua, tinggi menjadi 300px
+                    .animate({height: "300px"})
+                    // Animasi ketiga, margin kiri menjadi 150px
+                    .animate({marginLeft: "150px"})
+                    // Animasi keempat, ketebalan border menjadi 10px
+                    .animate({borderWidth: "10px"})
+                    // Animasi kelima, opacity menjadi 0.5
+                    .animate({opacity: 0.5});
+                });
+            });
+            </script>
+        </head>
+        <body>
+            <!--Tombol memulai animasi-->
+            <button type="button">Start Animation</button>
+            <div class="box"></div>
+        </body>
+    </html>

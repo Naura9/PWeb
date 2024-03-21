@@ -1,0 +1,23 @@
+<!--Praktikum Bagian 11 - JQuery UI Plugin-->
+<!--jQuery UI (user interface) untuk menciptakan efek-efek yang 
+    canggih dan komponen library pelengkap jQuery, seperti accordion 
+    dan datepicker.-->
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <!-- Mengimpor library jQuery UI CSS -->
+        <link rel="stylesheet" type="text/css" href="jquery-ui-1.13.2/jquery-ui.js">
+        <script src="jquery-3.7.1.js"></script>
+        <!-- Mengimpor library jQuery UI JavaScript -->
+        <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+            <script>
+                $(function() {
+                    //Inisialisasi datepicker pada elemen input dengan id "date_ex"
+                    $( "#date_ex" ).datepicker(); 
+                });
+            </script>
+        </head>
+        <body>
+            <dic>Selected Date: <input type="text" id="date_ex"></dic>
+        </body>
+    </html>

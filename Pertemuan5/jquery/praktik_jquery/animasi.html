@@ -1,0 +1,24 @@
+<!--Praktikum Bagian 7 - Animasi-->
+<!--Efek animasi untuk menggerakkan suatu elemen, 
+    method animate() untuk membuat efek animasi-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styleAnimate.css"/>
+        <script src="jquery-3.7.1.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("button").click(function() {
+                // Saat tombol diklik, animasi pergerakan elemen dengn tag "div" ke arah kanan 300 piksel dari posisi awalnya
+                $("div").animate({left: 300});
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <!--Tombol memulai animasi-->
+        <button type="button">Start Animation</button>
+        <div class="box"></div>
+    </body>
+</html>
