@@ -1,0 +1,20 @@
+/* Warna latar belakang navbar menjadi biru */
+.navbar {
+    background-color: #007bff !important; 
+    color: #fff; 
+}
+
+/* Teks di dalam jumbotron menjadi kuning */
+.jumbotron {
+    background-color: #f8f9fa; 
+    color: hsl(239, 73%, 19%); 
+}
+
+/* Tambahkan latar belakang gambar */
+.container-fluid {
+    background-image: url('gambar-background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff; 
+}
